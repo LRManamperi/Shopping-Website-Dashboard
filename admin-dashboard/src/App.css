@@ -1,0 +1,112 @@
+/* General styles */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #f5f5f5;
+  --header-footer-bg: #ffffff;
+  --text-color: #333333;
+  --border-color: rgba(0, 0, 0, 0.15);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.AppHeader {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px 4px 12px;
+  background-color: var(--header-footer-bg);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.AppFooter {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--header-footer-bg);
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -2px 4px var(--shadow-color);
+}
+
+.SideMenuAndPageContent {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--background-color);
+}
+
+.SideMenu {
+  height: 100%;
+  width: 200px;
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px var(--shadow-color);
+}
+
+.SideMenuVertical {
+  height: 100%;
+  padding: 20px 0;
+}
+
+.SideMenu a {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.SideMenu a:hover {
+  background-color: var(--secondary-color);
+}
+
+.PageContent {
+  padding: 20px;
+  flex: 1;
+  background-color: var(--header-footer-bg);
+  border-left: 1px solid var(--border-color);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+button:active {
+  background-color: var(--accent-color);
+}
